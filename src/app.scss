@@ -35,6 +35,9 @@ header {
   width: 100%;
   background-color: #fff;
   color: $header-text-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   .logo {
     display: flex;
@@ -53,6 +56,15 @@ header {
     li {
       list-style: none;
       margin-right: 30px;
+      padding-bottom: 10px;
+
+      &.active {
+        border-bottom: 3px solid $link-active-color;
+      }
+
+      &.active a {
+        color: $link-active-color;
+      }
     }
   }
 }

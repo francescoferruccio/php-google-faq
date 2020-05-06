@@ -43,7 +43,7 @@
     <header>
       <div class="logo">
         <img src="img/logo.png" alt="logo">
-        Privacy e termini
+        <h3>Privacy e termini</h4>
       </div>
       <div class="nav">
         <div class="nav-left">
@@ -61,14 +61,36 @@
 
       </div>
     </header>
-    <div class="container">
-      <!-- ciclo nel primo array per estrarre la domanda e uso l'indice per estrarre la risposta corrispondete dal secondo array -->
-      <?php
-        foreach ($questions as $indice => $question) {
-          echo "<h2>" . $question . "</h2>";
-          echo "<p>" . $answers[$indice] . "<p>";
-        }
-      ?>
-    </div>
+    <main>
+      <div class="container">
+        <!-- ciclo nel primo array per estrarre la domanda e uso l'indice per estrarre la risposta corrispondete dal secondo array -->
+        <?php
+          foreach ($questions as $indice => $question) {
+            echo "<h2>" . $question . "</h2>";
+            echo "<p>" . $answers[$indice] . "<p>";
+          }
+        ?>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="left-footer">
+          <ul>
+            <li><a href="#">Google</a></li>
+            <li><a href="#">Tutto su Google</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Termini</a></li>
+          </ul>
+        </div>
+        <div class="right-footer">
+          <img src="img/index.png" alt="index-img">
+          <select>
+            <option value="it">Italiano</option>
+            <option value="en">English</option>
+            <option value="es">Espanol</option>
+          </select>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

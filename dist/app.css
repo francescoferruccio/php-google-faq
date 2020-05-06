@@ -1,4 +1,6 @@
-@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);* {
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;
+
+400&display=swap);* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -46,6 +48,11 @@ header .logo img {
   margin-right: 10px;
 }
 
+header .logo h3 {
+  font-size: 20px;
+  font-weight: 300;
+}
+
 header .nav {
   display: flex;
   justify-content: space-between;
@@ -73,6 +80,13 @@ main .container {
 
 main .container p {
   margin: 20px 0;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+
+main .container p a {
+  color: #3367d6;
 }
 
 footer {

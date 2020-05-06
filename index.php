@@ -3,7 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>Google FAQ</title>
+    <!-- CSS -->
+    <style>
+      .container {
+        width: 50%;
+        margin: auto;
+      }
+    </style>
+
+    <!-- PHP -->
     <?php
+      // creo due array rispettivamente per domande e risposte
       $questions = [
         "Come state implementando la recente decisione della Corte di giustizia dell'Unione europea (CGUE) relativa al diritto all'oblio?",
         "Come fa Google a proteggere la mia privacy e a tenere le mie informazioni al sicuro?",
@@ -33,12 +43,16 @@
       ];
     ?>
   </head>
+
   <body>
-    <?php
-      foreach ($questions as $indice => $question) {
-        echo "<h2>" . $question . "</h2>";
-        echo "<p>" . $answers[$indice] . "<p>";
-      }
-    ?>
+    <div class="container">
+      <!-- ciclo nel primo array per estrarre la domanda e uso l'indice per estrarre la risposta corrispondete dal secondo array -->
+      <?php
+        foreach ($questions as $indice => $question) {
+          echo "<h2>" . $question . "</h2>";
+          echo "<p>" . $answers[$indice] . "<p>";
+        }
+      ?>
+    </div>
   </body>
 </html>
